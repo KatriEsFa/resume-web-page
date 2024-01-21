@@ -1,12 +1,16 @@
+import styled from "styled-components"
 import NavBar from "./navBar"
 
-NavBar
+const StyledMainLayoutWrapper = styled.div`
+    text-align: center;
+`
+
 const MainLayout = () => {
+  
   return (
-    <>
-        <NavBar/>
-        <h1>Hola Mundo</h1>      
-    </>
+    <StyledMainLayoutWrapper>
+        <NavBar/>   
+    </StyledMainLayoutWrapper>
   )
 }
 

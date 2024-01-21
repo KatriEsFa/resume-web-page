@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
-const StyledImgWraper = styled.div`
-`
-
-const StyledImgTag = styled.img`
-    max-width: 100%;
-    heigth: 100%;
-    width: 100%;
-`
-
 interface Props {
     link: string;
     alt?: string
 }
 
 export const LogoWraper = ({ link, alt }: Props ) => {
+
+    const StyledImgTag = styled.img`
+        max-width: 100%;
+        margin-top: -10px;
+    `
+    const StyledImgContainer = styled.div`
+        display:block;
+        width: 150px;
+    `
     return (
-        <StyledImgWraper>
+        <StyledImgContainer>
             <StyledImgTag src={link} alt={alt && alt} />
-        </StyledImgWraper>
+        </StyledImgContainer>
     )
 }
