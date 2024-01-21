@@ -14,7 +14,9 @@ const StyledButton = styled(Link)`
     text-decoration: none;
     width: 300px;
     height: 41px;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
     &:hover {
@@ -23,19 +25,17 @@ const StyledButton = styled(Link)`
 `;
 
 interface NavButton {
-    text: string,
+    text?: string,
     link: string,
     image?: string,
 }
 
 const NavButton = ({text, link, image}: NavButton) => {
   return (
-    <>
       <StyledButton to={link}>
             {image && <img src="image" alt={text} />} 
-            {text.toUpperCase()}
+            {text && text.toUpperCase()}
       </StyledButton>
-    </>
   )
 }
 
