@@ -1,6 +1,6 @@
-import { NavWraper } from "./assets/NavWraper"
-import NavButton from "./components/NavButton"
-import styled from "styled-components"
+import NavWraper from "./components/NavWraper";
+import NavButton from "./components/NavButton";
+import styled from "styled-components";
 
 const StyledNavBar = styled.div`
   display: flex;
