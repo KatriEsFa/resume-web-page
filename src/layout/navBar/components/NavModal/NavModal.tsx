@@ -25,6 +25,8 @@ interface Props {
 
 const NavModal = ({ children, modalId: id }: Props) => {
   const [modalId] = useState(id);
+
+  //This State is supposed to manipulated if the manu bar is open or closed (true or false) probably should be convined with the visibility and opacity from the styled component of the top
   const [open, setOpen] = useState(false);
   const { getAsObservable } = useModal('');
 
